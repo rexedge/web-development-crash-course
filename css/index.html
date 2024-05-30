@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Blog</title>
+     <link id="style-link" rel="stylesheet" href="styles.css">
+     <script src="/javascript/styleswitcher.js" defer></script>
+</head>
+
+<body>
+     <header id="header">
+          <h1 class="header-title">Welcome to My Blog</h1>
+     </header>
+     <hr />
+     <nav id="main-nav">
+          <a href="/" class="nav-link">Web Development</a> |
+          <a href="#home" class="nav-link">Home</a> |
+          <a href="#about" class="nav-link">About</a> |
+          <a href="#contact" class="nav-link">Contact</a>
+     </nav>
+     <hr />
+     <button onclick="switchStylesNull()">No Style</button>
+     <button onclick="switchStylesDefault()">Default Style</button>
+     <button onclick="switchStylesDigital()">Digital Style</button>
+     <hr />
+     <table id="layout-table">
+          <tr>
+               <td class="main-content-cell">
+                    <main id="main-content">
+                         <article id="main-article">
+                              <h2 class="article-title">Main Blog Post</h2>
+                              <img src="/images/fallen-leaves-on-walkway.jpg" alt="Description of image 1" height="200"
+                                   width="400" class="article-image" />
+                              <p class="article-paragraph">
+                                   This is the description of the blog post. It provides more information on the
+                                   topic discussed in this post.
+                              </p>
+                              <p class="article-paragraph">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque totam quibusdam culpa,
+                                   maxime aliquam odio provident odit itaque minus laudantium alias placeat architecto,
+                                   aspernatur non, debitis quas impedit tenetur commodi.
+                              </p>
+                              <p class="article-paragraph">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque totam quibusdam culpa,
+                                   maxime aliquam odio provident odit itaque minus laudantium alias placeat architecto,
+                                   aspernatur non, debitis quas impedit tenetur commodi.
+                              </p>
+                              <p class="article-paragraph">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque totam quibusdam culpa,
+                                   maxime aliquam odio provident odit itaque minus laudantium alias placeat architecto,
+                                   aspernatur non, debitis quas impedit tenetur commodi.
+                                   <br />
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque totam quibusdam culpa,
+                                   maxime aliquam odio provident odit itaque minus laudantium alias placeat architecto,
+                                   aspernatur non, debitis quas impedit tenetur commodi.
+                              </p>
+                         </article>
+                    </main>
+               </td>
+               <td class="aside-content-cell">
+                    <aside id="recent-posts">
+                         <h2 class="aside-title">Recent Posts</h2>
+                         <article class="aside-article">
+                              <img src="/images/fallen-leaves-on-walkway.jpg" alt="Description of image 1" height="50"
+                                   width="100" class="aside-image" />
+                              <h3 class="aside-article-title">Blog Post Title 1</h3>
+                              <p class="aside-article-paragraph">This is a brief description of the first recent blog
+                                   post.</p>
+                         </article>
+                         <article class="aside-article">
+                              <img src="/images/bridge.jpg" alt="Description of image 2" height="50" width="100"
+                                   class="aside-image" />
+                              <h3 class="aside-article-title">Blog Post Title 2</h3>
+                              <p class="aside-article-paragraph">This is a brief description of the second recent blog
+                                   post.</p>
+                         </article>
+                         <article class="aside-article">
+                              <img src="/images/leaf-with-dew-drop.jpg" alt="Description of image 3" height="50"
+                                   width="100" class="aside-image" />
+                              <h3 class="aside-article-title">Blog Post Title 3</h3>
+                              <p class="aside-article-paragraph">This is a brief description of the third recent blog
+                                   post.</p>
+                         </article>
+                    </aside>
+               </td>
+          </tr>
+     </table>
+     <hr />
+     <footer id="footer">
+          <p class="footer-text">&copy; 2024 Web Development Crash Course Blog</p>
+     </footer>
+</body>
+
+</html>
