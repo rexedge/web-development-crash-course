@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <link id="style-link" rel="stylesheet" href="output.css" />
+    <script src="/javascript/styleswitcher.js" defer></script>
+  </head>
+
+  <body class="bg-[#f9f9f9] font-[sans-serif] m-0 p-0 text-[#333]">
+    <header
+      id="header"
+      class="bg-[#4caf50] text-[white] px-[10px] py-0 text-center"
+    >
+      <h1 class="header-title text-3xl font-bold m-0">Welcome to My Blog</h1>
+    </header>
+    <hr class="my-2 border-gray-300" />
+    <nav id="main-nav" class="text-center my-[10px] mx-0 text-[#4caf50]">
+      <!-- <a href="/" class="nav-link mx-0 my-[15px] hover:underline text-[#4caf50]"
+        >Web Development</a
+      >
+      |<a
+        href="#home"
+        class="nav-link mx-0 my-[15px] hover:underline text-[#4caf50]"
+        >Home</a
+      >
+      |
+      <a
+        href="#about"
+        class="nav-link mx-0 my-[15px] hover:underline text-[#4caf50]"
+        >About</a
+      >
+      |
+      <a
+        href="#contact"
+        class="nav-link mx-0 my-[15px] hover:underline text-[#4caf50]"
+        >Contact</a
+      > -->
+      <a href="/" class="nav-link my-0 mx-[15px] hover:underline text-[#4caf50]"
+        >Web Development</a
+      >
+      <span class="mx-2">|</span>
+      <a
+        href="#home"
+        class="nav-link mx-0 my-[15px] hover:underline text-[#4caf50]"
+        >Home</a
+      >
+      <span class="mx-2">|</span>
+      <a
+        href="#about"
+        class="nav-link mx-0 my-[15px] hover:underline text-[#4caf50]"
+        >About</a
+      >
+      <span class="mx-2">|</span>
+      <a
+        href="#contact"
+        class="nav-link mx-0 my-[15px] hover:underline text-[#4caf50]"
+        >Contact</a
+      >
+    </nav>
+    <hr class="my-2 border-gray-300" />
+    <button
+      onclick="switchStylesNull()"
+      class="px-2 py-1 text-sm border border-gray-300 rounded"
+    >
+      No Style
+    </button>
+    <button
+      onclick="switchStylesDefault()"
+      class="px-2 py-1 text-sm border border-gray-300 rounded"
+    >
+      Default Style
+    </button>
+    <button
+      onclick="switchStylesDigital()"
+      class="px-2 py-1 text-sm border border-gray-300 rounded"
+    >
+      Digital Style
+    </button>
+    <hr class="my-2 border-gray-300" />
+
+    <div id="layout-table" class="w-[50%] mx-0 my-5 border-collapse">
+      <div class="grid grid-cols-2">
+        <div class="main-content-cell align-top p-[10px] block w-full">
+          <main
+            id="main-content"
+            class="bg-white p-[20px] border border-solid rounded"
+          >
+            <article id="main-article" class="text-7xl">
+              <h2 class="article-title mt-0 text-[20px] font-bold">
+                Main Blog Post
+              </h2>
+              <img
+                src="/images/fallen-leaves-on-walkway.jpg"
+                alt="Description of image 1"
+                height="200"
+                width="400"
+                class="article-image mx-auto h-auto"
+              />
+              <p class="article-paragraph text-justify">
+                This is the description of the blog post. It provides more
+                information on the topic discussed in this post.
+              </p>
+              <p class="article-paragraph text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                totam quibusdam culpa, maxime aliquam odio provident odit itaque
+                minus laudantium alias placeat architecto, aspernatur non,
+                debitis quas impedit tenetur commodi.
+              </p>
+              <p class="article-paragraph text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                totam quibusdam culpa, maxime aliquam odio provident odit itaque
+                minus laudantium alias placeat architecto, aspernatur non,
+                debitis quas impedit tenetur commodi.
+              </p>
+              <p class="article-paragraph text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                totam quibusdam culpa, maxime aliquam odio provident odit itaque
+                minus laudantium alias placeat architecto, aspernatur non,
+                debitis quas impedit tenetur commodi.
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                totam quibusdam culpa, maxime aliquam odio provident odit itaque
+                minus laudantium alias placeat architecto, aspernatur non,
+                debitis quas impedit tenetur commodi.
+              </p>
+            </article>
+          </main>
+        </div>
+        <div class="aside-content-cell align-top p-[10px] w-full">
+          <aside
+            id="recent-posts"
+            class="bg-[#f1f1f1] border rounded p-5 border-solid border-[#ddd]"
+          >
+            <h2 class="aside-title mt-0 text-3xl font-bold">Recent Posts</h2>
+            <article class="aside-article mb-[20px]">
+              <img
+                src="/images/fallen-leaves-on-walkway.jpg"
+                alt="Description of image 1"
+                height="50"
+                width="100"
+                class="aside-image float-none block mt-0 mx-auto mb-2.5"
+              />
+              <h3 class="aside-article-title text-xl mt-0 font-bold">
+                Blog Post Title 1
+              </h3>
+              <p class="aside-article-paragraph text-justify">
+                This is a brief description of the first recent blog post.
+              </p>
+            </article>
+            <article class="aside-article mb-[20px]">
+              <img
+                src="/images/bridge.jpg"
+                alt="Description of image 2"
+                height="50"
+                width="100"
+                class="aside-image float-none block mt-0 mx-auto mb-2.5"
+              />
+              <h3 class="aside-article-title text-xl mt-0 font-bold">
+                Blog Post Title 2
+              </h3>
+              <p class="aside-article-paragraph text-justify">
+                This is a brief description of the second recent blog post.
+              </p>
+            </article>
+            <article class="aside-article mb-[20px]">
+              <img
+                src="/images/leaf-with-dew-drop.jpg"
+                alt="Description of image 3"
+                height="50"
+                width="100"
+                class="aside-image float-none block mt-0 mx-auto mb-2.5"
+              />
+              <h3 class="aside-article-title text-xl mt-0 font-bold">
+                Blog Post Title 3
+              </h3>
+              <p class="aside-article-paragraph text-justify">
+                This is a brief description of the third recent blog post.
+              </p>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <footer
+      id="footer"
+      class="bg-[#4caf50] text-white text-center px-[10px] py-0 fixed w-full bottom-0"
+    >
+      <p class="footer-text m-0">
+        &copy; 2024 Web Development Crash Course Blog
+      </p>
+    </footer>
+  </body>
+</html>
