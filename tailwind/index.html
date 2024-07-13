@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <link id="style-link" rel="stylesheet" href="output.css" />
+    <script src="/javascript/styleswitcher.js" defer></script>
+  </head>
+
+  <body class="font-sans bg-gray-100 text-gray-800">
+    <header id="header" class="bg-green-600 text-white py-4 text-center">
+      <h1 class="header-title m-0">Welcome to My Blog</h1>
+    </header>
+    <hr class="my-4" />
+    <nav id="main-nav" class="text-center my-4">
+      <a href="/" class="nav-link mx-4 text-green-500 hover:underline"
+        >Web Development</a
+      >
+      |
+      <a href="#home" class="nav-link mx-4 text-green-500 hover:underline"
+        >Home</a
+      >
+      |
+      <a href="#about" class="nav-link mx-4 text-green-500 hover:underline"
+        >About</a
+      >
+      |
+      <a href="#contact" class="nav-link mx-4 text-green-500 hover:underline"
+        >Contact</a
+      >
+    </nav>
+    <hr class="my-4" />
+    <div class="text-center mb-4">
+      <button
+        onclick="switchStylesNull()"
+        class="px-4 py-2 bg-gray-200 hover:bg-gray-300"
+      >
+        No Style
+      </button>
+      <button
+        onclick="switchStylesDefault()"
+        class="px-4 py-2 bg-gray-200 hover:bg-gray-300"
+      >
+        Default Style
+      </button>
+      <button
+        onclick="switchStylesDigital()"
+        class="px-4 py-2 bg-gray-200 hover:bg-gray-300"
+      >
+        Digital Style
+      </button>
+    </div>
+    <hr class="my-4" />
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="md:col-span-2">
+          <main
+            id="main-content"
+            class="bg-white p-6 border border-gray-300 rounded-lg"
+          >
+            <article id="main-article">
+              <h2 class="article-title text-2xl font-bold mb-4">
+                Main Blog Post
+              </h2>
+              <img
+                src="/images/fallen-leaves-on-walkway.jpg"
+                alt="Description of image 1"
+                class="article-image w-full h-auto mb-4"
+              />
+              <p class="article-paragraph text-justify mb-4">
+                This is the description of the blog post. It provides more
+                information on the topic discussed in this post.
+              </p>
+              <p class="article-paragraph text-justify mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                totam quibusdam culpa, maxime aliquam odio provident odit itaque
+                minus laudantium alias placeat architecto, aspernatur non,
+                debitis quas impedit tenetur commodi.
+              </p>
+              <p class="article-paragraph text-justify mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                totam quibusdam culpa, maxime aliquam odio provident odit itaque
+                minus laudantium alias placeat architecto, aspernatur non,
+                debitis quas impedit tenetur commodi.
+              </p>
+              <p class="article-paragraph text-justify mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                totam quibusdam culpa, maxime aliquam odio provident odit itaque
+                minus laudantium alias placeat architecto, aspernatur non,
+                debitis quas impedit tenetur commodi.
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                totam quibusdam culpa, maxime aliquam odio provident odit itaque
+                minus laudantium alias placeat architecto, aspernatur non,
+                debitis quas impedit tenetur commodi.
+              </p>
+            </article>
+          </main>
+        </div>
+        <div>
+          <aside
+            id="recent-posts"
+            class="bg-gray-200 p-6 border border-gray-300 rounded-lg"
+          >
+            <h2 class="aside-title text-xl font-bold mb-4">Recent Posts</h2>
+            <article class="aside-article mb-4 flex items-start">
+              <img
+                src="/images/fallen-leaves-on-walkway.jpg"
+                alt="Description of image 1"
+                class="aside-image w-24 h-auto mr-4"
+              />
+              <div>
+                <h3 class="aside-article-title font-bold">Blog Post Title 1</h3>
+                <p class="aside-article-paragraph text-justify">
+                  This is a brief description of the first recent blog post.
+                </p>
+              </div>
+            </article>
+            <article class="aside-article mb-4 flex items-start">
+              <img
+                src="/images/bridge.jpg"
+                alt="Description of image 2"
+                class="aside-image w-24 h-auto mr-4"
+              />
+              <div>
+                <h3 class="aside-article-title font-bold">Blog Post Title 2</h3>
+                <p class="aside-article-paragraph text-justify">
+                  This is a brief description of the second recent blog post.
+                </p>
+              </div>
+            </article>
+            <article class="aside-article mb-4 flex items-start">
+              <img
+                src="/images/leaf-with-dew-drop.jpg"
+                alt="Description of image 3"
+                class="aside-image w-24 h-auto mr-4"
+              />
+              <div>
+                <h3 class="aside-article-title font-bold">Blog Post Title 3</h3>
+                <p class="aside-article-paragraph text-justify">
+                  This is a brief description of the third recent blog post.
+                </p>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4" />
+    <footer
+      id="footer"
+      class="bg-green-500 text-white text-center py-4 fixed w-full bottom-0"
+    >
+      <p class="footer-text m-0">
+        &copy; 2024 Web Development Crash Course Blog
+      </p>
+    </footer>
+  </body>
+</html>
